@@ -73,9 +73,8 @@ for statrow in statrows:
 # In[7]:
 
 
-statlist =[]
-for teams,stats in zip(teaminfo,teamstat):
-    statlist.append(list(teams) + list(stats))
+ziplist = zip(teaminfo,teamstat)
+statlist = list(ziplist)
 
 labels = ['Team Name','Team Code','Win','Loss','Percent Win','Games Behind',
          'Home Record','Away Record','Division','Conference','PPG','Opp PPG',
